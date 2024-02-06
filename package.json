@@ -1,0 +1,21 @@
+{
+  "name": "suzi_google_maps",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build --outDir dist --base './'",
+    "test": "tsc --no-emit",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/google.maps": "^3.53.5",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.12"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
