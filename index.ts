@@ -56,8 +56,8 @@ async function getPoints() {
     let url = "https://suzi-backend.onrender.com/gheatmap/test";
     let response = await fetch(url);
     let data = await response.json();
-    let locations = data.map((location: { latitude: number | google.maps.LatLng | google.maps.LatLngLiteral; longitude: number | boolean | null | undefined; }) => {
-        return new google.maps.LatLng(location.latitude, location.longitude);
+    let locations = data.map((location: { latitude: number | google.maps.LatLng | google.maps.LatLngLiteral; longitude: number | boolean | null | undefined; rating: number | boolean | null | undefined }) => {
+        return { location: new google.maps.LatLng(location.latitude, location.longitude), weight: location.rating }
     });
     return locations;
 }
