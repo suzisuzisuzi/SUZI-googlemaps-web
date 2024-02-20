@@ -1,15 +1,11 @@
-# suzi_google_maps
+# SUZI Google Maps JS
 
-To install dependencies:
+This is a static website that is embedded in the Flutter App for non-android platforms for the SUZI Project for the Google Solution Challenge 2024 by Team TBD.
 
-```bash
-bun install
+## Instructions to Run
+Get a Google Maps API Key from the Google Cloud Console and replace the API Key in the index.html file with your own API Key.
+
 ```
-
-To run:
-
-```bash
-bun run index.ts
+npm install
+npm run dev
 ```
-
-This project was created using `bun init` in bun v1.0.25. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
